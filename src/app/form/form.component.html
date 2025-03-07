@@ -1,0 +1,85 @@
+<form>
+  <div class="row mb-3">
+    <div class="col-6">
+      <input
+        class="form-control form-control-sm"
+        type="number"
+        [(ngModel)]="num1"
+        name="num1"
+        placeholder="Digite um número"
+        aria-label="Número 1"
+      />
+    </div>
+    <div class="col-6">
+      <input
+        type="number"
+        [(ngModel)]="num2"
+        name="num2"
+        class="form-control form-control-sm"
+        placeholder="Digite um número"
+        aria-label="Número 2"
+      />
+    </div>
+  </div>
+  <div class="row g-2">
+    <div class="col-4">
+      <button
+        (click)="onClick('+')"
+        type="button"
+        class="btn btn-primary btn-sm w-75"
+      >
+       Soma
+      </button>
+    </div>
+    <div class="col-4">
+      <button
+        (click)="onClick('-')"
+        type="button"
+        class="btn btn-primary btn-sm w-75"
+      >
+       Subtrair
+      </button>
+    </div>
+    <div class="col-4">
+      <button
+        (click)="onClick('/')"
+        type="button"
+        class="btn btn-primary btn-sm w-75"
+      >
+        Dividir
+      </button>
+    </div>
+    <div class="col-4">
+      <button
+        (click)="onClick('*')"
+        type="button"
+        class="btn btn-primary btn-sm w-75"
+      >
+        Multiplicar
+      </button>
+    </div>
+    <div class="col-4">
+      <button
+        (click)="onClick('media')"
+        type="button"
+        class="btn btn-primary btn-sm w-75"
+      >
+        Media
+      </button>
+    </div>
+    <div class="col-4">
+      <button
+        (click)="onClick('potencia')"
+        type="button"
+        class="btn btn-primary btn-sm w-75"
+      >
+        Potencia
+      </button>
+    </div>
+    <div class="card">
+  <div class="card-body">
+    {{result}}
+  </div>
+</div>
+  </div>
+</form>
